@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:reeltime/provider/app_notifier.dart';
+import 'package:reeltime/screens/auth/signup.dart';
 import 'package:reeltime/screens/splash.dart';
 import 'package:reeltime/theme/dark_theme.dart';
 import 'package:reeltime/theme/light_theme.dart';
@@ -23,7 +24,7 @@ class ReelTime extends StatelessWidget {
         theme: lightTheme,
         darkTheme: darkTheme,
         themeMode: ThemeMode.dark,
-        home: const SplashScreen(),
+        home: SignUpScreen(),
       ),
     ),
     );

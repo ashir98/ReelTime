@@ -29,7 +29,7 @@ String showYearAndGenre(DateTime year, List<Genre> genres) {
       ? '${genres[0].name}/${genres[1].name}' // Display first two genres
       : genres.isNotEmpty 
         ? genres[0].name                // If only one genre is present
-        : 'No Genre';              // If no genres are available
+        : 'N/A';              // If no genres are available
   
   // Combine the year and the genres
   return '$movieYear · $movieGenre';
@@ -41,7 +41,7 @@ String showYearAndGenre(DateTime year, List<Genre> genres) {
 String formatCurrencyAmount(int budget) {
   // Check if the budget is valid and greater than zero
   if (budget <= 0) {
-    return 'Budget not available';
+    return 'N/A';
   }
 
   // Convert the budget into millions or billions and add 'M' or 'B'

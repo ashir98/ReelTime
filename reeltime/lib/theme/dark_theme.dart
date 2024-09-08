@@ -34,17 +34,28 @@ ThemeData darkTheme = ThemeData(
     
     
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(15),
-      borderSide: BorderSide.none
+      borderRadius: BorderRadius.circular(50),
+      
+      borderSide: BorderSide(
+        width: 0.6,
+        color: AppColors.primaryColor
+      )
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(50),
+      borderSide: BorderSide(
+        color: AppColors.primaryColor,
+        width: 0.6
+      )
     ),
     
 
 
 
     focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(15),
+      borderRadius: BorderRadius.circular(50),
       borderSide: BorderSide(
-        
+        width: 0.6,
         color: AppColors.primaryColor
       )
     )
